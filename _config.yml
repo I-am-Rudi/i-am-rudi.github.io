@@ -1,0 +1,8 @@
+title: Homepage
+description: Brutalist developer portfolio
+url: "https://i-am-rudi.github.io"
+baseurl: "/Homepage"
+markdown: kramdown
+collections:
+  projects:
+    output: true

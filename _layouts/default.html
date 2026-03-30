@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+
+      body {
+        font-family: "JetBrains Mono", monospace;
+        background-color: #0a0a0a;
+        color: #a1a1aa;
+        background-image:
+          linear-gradient(rgba(39, 39, 42, 0.32) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(39, 39, 42, 0.32) 1px, transparent 1px);
+        background-size: 24px 24px;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        color: #ffffff;
+      }
+
+      .content a {
+        color: #ffffff;
+        text-decoration: underline;
+      }
+
+      .content pre,
+      .content code,
+      .content blockquote,
+      .content table,
+      .content hr {
+        border-color: #27272a;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen antialiased">
+    <div class="mx-auto min-h-screen w-full max-w-5xl border-x border-zinc-800 bg-black/40">
+      <header class="border-b border-zinc-800 px-6 py-4 text-xs uppercase tracking-widest text-zinc-300">
+        <div class="flex items-center justify-between gap-4">
+          <nav class="flex items-center gap-4">
+            <a href="{{ '/' | relative_url }}" class="text-white no-underline">HOME</a>
+            <a href="{{ '/#projects' | relative_url }}" class="no-underline">PROJECTS</a>
+          </nav>
+          <div class="flex items-center gap-2">
+            <span class="inline-block h-2 w-2 border border-zinc-500 bg-emerald-400"></span>
+            <span>SYSTEM STATUS: NOMINAL</span>
+          </div>
+        </div>
+      </header>
+      <main class="content px-6 py-10">
+        {{ content }}
+      </main>
+    </div>
+  </body>
+</html>
