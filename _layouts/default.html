@@ -339,6 +339,7 @@
           const headings = Array.from(content.querySelectorAll("h2, h3"));
           if (headings.length === 0) return;
 
+          const usedIds = new Set();
           const slugify = (text) =>
             text
               .toLowerCase()
@@ -347,15 +348,25 @@
               .replace(/\s+/g, "-");
 
           headings.forEach((heading, index) => {
-            if (!heading.id) {
-              heading.id = `${slugify(heading.textContent || "section")}-${index + 1}`;
+            const text = (heading.textContent || "").trim();
+            const fallback = heading.tagName === "H3" ? "subsection" : "section";
+            const base = slugify(text) || fallback;
+
+            const baseId = heading.id || base;
+            let uniqueId = baseId;
+            let counter = 2;
+            while (usedIds.has(uniqueId)) {
+              uniqueId = `${baseId}-${counter}`;
+              counter += 1;
             }
+            heading.id = uniqueId;
+            usedIds.add(uniqueId);
 
             const item = document.createElement("li");
             const link = document.createElement("a");
             link.className = heading.tagName === "H3" ? "toc-depth-3" : "";
             link.href = `#${heading.id}`;
-            link.textContent = heading.textContent;
+            link.textContent = text || heading.textContent;
             item.appendChild(link);
             toc.appendChild(item);
           });
