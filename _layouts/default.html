@@ -20,48 +20,136 @@
     />
     <style>
       :root {
-        color-scheme: dark;
+        color-scheme: light;
       }
 
       body {
         font-family: "JetBrains Mono", monospace;
-        background-color: #0a0a0a;
-        color: #a1a1aa;
+        background-color: #f5efe3;
+        color: #3f3527;
         background-image:
-          linear-gradient(rgba(39, 39, 42, 0.32) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(39, 39, 42, 0.32) 1px, transparent 1px);
+          linear-gradient(rgba(167, 145, 112, 0.18) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(167, 145, 112, 0.18) 1px, transparent 1px);
         background-size: 24px 24px;
       }
 
       h1, h2, h3, h4, h5, h6 {
-        color: #ffffff;
+        color: #2e2619;
       }
 
       .content a {
-        color: #ffffff;
+        color: #2f3e9d;
         text-decoration: underline;
       }
 
-      .content pre,
-      .content code,
+      .content {
+        line-height: 1.6;
+      }
+
+      .content p,
+      .content ul,
+      .content ol,
       .content blockquote,
       .content table,
+      .content pre {
+        margin-top: 0.75rem;
+        margin-bottom: 0.75rem;
+      }
+
+      .content ul,
+      .content ol {
+        padding-left: 1.25rem;
+      }
+
+      .content li {
+        margin: 0.2rem 0;
+      }
+
       .content hr {
-        border-color: #27272a;
+        border: 0;
+        border-top: 1px solid #d4c6ad;
+      }
+
+      .content blockquote {
+        border-left: 3px solid #92805f;
+        padding-left: 0.8rem;
+        color: #5b4f3a;
+      }
+
+      .content code {
+        background: #efe5d2;
+        border: 1px solid #d9caaf;
+        border-radius: 4px;
+        padding: 0.05rem 0.35rem;
+        color: #1f3f89;
+      }
+
+      .content pre {
+        background: #eee3ce;
+        border: 1px solid #d9caaf;
+        border-radius: 8px;
+        padding: 0.8rem;
+        overflow-x: auto;
+      }
+
+      .content pre code {
+        background: transparent;
+        border: 0;
+        padding: 0;
+        color: inherit;
+      }
+
+      .content table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .content th,
+      .content td {
+        border: 1px solid #d4c6ad;
+        padding: 0.45rem;
+        text-align: left;
+      }
+
+      .cv-divider {
+        border-top: 3px solid #2f3e9d;
+      }
+
+      .cv-meta {
+        color: #6f6656;
+      }
+
+      .cv-item {
+        display: grid;
+        grid-template-columns: 140px 1fr;
+        gap: 1rem;
+        margin-top: 0.9rem;
+      }
+
+      .cv-date {
+        color: #6f6656;
+      }
+
+      @media (max-width: 700px) {
+        .cv-item {
+          grid-template-columns: 1fr;
+          gap: 0.35rem;
+        }
       }
     </style>
   </head>
   <body class="min-h-screen antialiased">
-    <div class="mx-auto min-h-screen w-full max-w-5xl border-x border-zinc-800 bg-black/40">
-      <header class="border-b border-zinc-800 px-6 py-4 text-xs uppercase tracking-widest text-zinc-300">
+    <div class="mx-auto min-h-screen w-full max-w-5xl border-x border-[#cfbfa1] bg-[#fbf7ef]/90">
+      <header class="border-b border-[#cfbfa1] px-6 py-4 text-xs uppercase tracking-widest text-[#6f6656]">
         <div class="flex items-center justify-between gap-4">
           <nav class="flex items-center gap-4">
-            <a href="{{ '/' | relative_url }}" class="text-white no-underline">HOME</a>
-            <a href="{{ '/#projects' | relative_url }}" class="no-underline">PROJECTS</a>
+            <a href="{{ '/' | relative_url }}" class="no-underline {% if page.url == '/' %}text-[#2f3e9d]{% endif %}">HOME</a>
+            <a href="{{ '/cv/' | relative_url }}" class="no-underline {% if page.url == '/cv/' %}text-[#2f3e9d]{% endif %}">CV</a>
+            <a href="{{ '/blog/' | relative_url }}" class="no-underline {% if page.url == '/blog/' or page.layout == 'post' %}text-[#2f3e9d]{% endif %}">BLOG</a>
           </nav>
           <div class="flex items-center gap-2">
-            <span class="inline-block h-2 w-2 border border-zinc-500 bg-emerald-400"></span>
-            <span>SYSTEM STATUS: NOMINAL</span>
+            <span class="inline-block h-2 w-2 border border-[#96896f] bg-[#2f3e9d]"></span>
+            <span>PROFILE ONLINE</span>
           </div>
         </div>
       </header>
