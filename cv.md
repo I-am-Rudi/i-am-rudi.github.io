@@ -4,7 +4,7 @@ title: CV
 permalink: /cv/
 ---
 
-<section class="space-y-4 border border-[#cfbfa1] bg-[#fbf7ef] p-8">
+<section class="space-y-4 border border-[#d8cab0] bg-[#fcf9f3] p-8">
   <div class="flex flex-col gap-2 md:flex-row md:items-start md:justify-between">
     <div>
       <h1 class="text-4xl font-bold text-[#2f3e9d]">Kevin Rudolf Siebert</h1>
@@ -131,5 +131,84 @@ permalink: /cv/
         <li>Extensive comparison to established numerical methods</li>
       </ul>
     </div>
+  </div>
+
+  <div class="pt-3">
+    <div class="cv-divider"></div>
+    <h2 class="mt-2 text-3xl font-semibold text-[#2f3e9d]">Experience</h2>
+  </div>
+
+  <div class="cv-item">
+    <div class="cv-date">11/2023 – today</div>
+    <div>
+      <p><strong>Working Student as a Machine Learning Engineer</strong>, Fraunhofer IOF, Jena.</p>
+      <ul class="list-disc">
+        <li>Research and development of computer vision machine learning algorithms</li>
+        <li>Main focus on image classification, detection and 3D-reconstruction</li>
+        <li>Specialized models (2D/3D Gaussian Splatting and Neural Radiance Fields)</li>
+        <li>Relevant workflow: convolutional neural networks and transformer networks with focus on shifted window transformers (Swin)</li>
+        <li>Researched, developed and deployed an industry-grade deep learning pipeline on my own</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="cv-item">
+    <div class="cv-date">04/2022 – 09/2022</div>
+    <div>
+      <p><strong>Scientific Assistant ("Wissenschaftliche Hilfskraft")</strong>, Friedrich-Schiller-University, Jena.</p>
+      <ul class="list-disc">
+        <li>Correction of exercise sheets for the lecture "Theoretical Electrodynamics" by Prof. Dr. Reinhard Meinel</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="cv-item">
+    <div class="cv-date">10/2021 – 02/2022</div>
+    <div>
+      <p><strong>Student Assistant ("Studentische Hilfskraft")</strong>, Friedrich-Schiller-University, Jena.</p>
+      <ul class="list-disc">
+        <li>Correction of exercise sheets for the lecture "Thermodynamics and Statistical Mechanics" by Prof. Dr. Reinhard Meinel</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="cv-item">
+    <div class="cv-date">09/2019 – 02/2021</div>
+    <div>
+      <p><strong>Tutoring</strong>, Schülerhilfe Nachhilfe Cornelia Rosenberg, Jena.</p>
+      <ul class="list-disc">
+        <li>Tutoring in mathematics and physics for high school students</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="pt-3">
+    <div class="cv-divider"></div>
+    <h2 class="mt-2 text-3xl font-semibold text-[#2f3e9d]">Key Skills</h2>
+  </div>
+
+  <div class="cv-item">
+    <div class="cv-date">Physics</div>
+    <div><p>Quantum Field Theory, General Relativity, Quantum Gravity, Quantum Information Theory, Computational Physics</p></div>
+  </div>
+  <div class="cv-item">
+    <div class="cv-date">Mathematics</div>
+    <div><p>Group Theory and Representation Theory, Lie Algebras, Differential Geometry, Discrete Geometry, Complex Analysis, Algebraic Topology, Algebraic Geometry</p></div>
+  </div>
+  <div class="cv-item">
+    <div class="cv-date">Documentation</div>
+    <div><p>LaTeX, TikZ, PGFplots, Mermaid</p></div>
+  </div>
+  <div class="cv-item">
+    <div class="cv-date">Programming</div>
+    <div><p>Julia, Python (numpy, matplotlib, pytorch, numba), C++</p></div>
+  </div>
+  <div class="cv-item">
+    <div class="cv-date">Computer Algebra</div>
+    <div><p>Wolfram language/Mathematica, SymPy</p></div>
+  </div>
+  <div class="cv-item">
+    <div class="cv-date">Software</div>
+    <div><p>Linux, Git, Inkscape, Obsidian</p></div>
   </div>
 </section>
