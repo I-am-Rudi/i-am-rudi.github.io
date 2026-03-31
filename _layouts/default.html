@@ -25,11 +25,11 @@
 
       body {
         font-family: "JetBrains Mono", monospace;
-        background-color: #f5efe3;
+        background-color: #f7f1e7;
         color: #3f3527;
         background-image:
-          linear-gradient(rgba(167, 145, 112, 0.18) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(167, 145, 112, 0.18) 1px, transparent 1px);
+          linear-gradient(rgba(167, 145, 112, 0.14) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(167, 145, 112, 0.14) 1px, transparent 1px);
         background-size: 24px 24px;
       }
 
@@ -44,6 +44,28 @@
 
       .content {
         line-height: 1.6;
+      }
+
+      .content h1 {
+        font-size: 2.25rem;
+        line-height: 1.2;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        color: #2f3e9d;
+      }
+
+      .content h2 {
+        margin-top: 1.6rem;
+        margin-bottom: 0.6rem;
+        font-size: 1.45rem;
+        font-weight: 700;
+      }
+
+      .content h3 {
+        margin-top: 1.2rem;
+        margin-bottom: 0.35rem;
+        font-size: 1.1rem;
+        font-weight: 700;
       }
 
       .content p,
@@ -85,10 +107,10 @@
       }
 
       .content pre {
-        background: #eee3ce;
-        border: 1px solid #d9caaf;
+        background: #f6eee0;
+        border: 1px solid #ded0b8;
         border-radius: 8px;
-        padding: 0.8rem;
+        padding: 0.9rem;
         overflow-x: auto;
       }
 
@@ -109,6 +131,31 @@
         border: 1px solid #d4c6ad;
         padding: 0.45rem;
         text-align: left;
+      }
+
+      .content > :first-child {
+        margin-top: 0;
+      }
+
+      .markdown-page .content {
+        max-width: 860px;
+        margin: 0 auto;
+        border: 1px solid #d8cab0;
+        background: #fcf9f3;
+        padding: 2.2rem;
+      }
+
+      .markdown-page .content h2 {
+        border-bottom: 2px solid #2f3e9d;
+        padding-bottom: 0.2rem;
+      }
+
+      .markdown-page .content ul {
+        list-style: disc;
+      }
+
+      .markdown-page .content ol {
+        list-style: decimal;
       }
 
       .cv-divider {
@@ -138,8 +185,8 @@
       }
     </style>
   </head>
-  <body class="min-h-screen antialiased">
-    <div class="mx-auto min-h-screen w-full max-w-5xl border-x border-[#cfbfa1] bg-[#fbf7ef]/90">
+  <body class="min-h-screen antialiased {% if page.layout == 'post' %}markdown-page{% endif %}">
+    <div class="mx-auto min-h-screen w-full max-w-5xl border-x border-[#d8cab0] bg-[#fcf8f1]/92">
       <header class="border-b border-[#cfbfa1] px-6 py-4 text-xs uppercase tracking-widest text-[#6f6656]">
         <div class="flex items-center justify-between gap-4">
           <nav class="flex items-center gap-4">
