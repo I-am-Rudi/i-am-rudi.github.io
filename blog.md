@@ -4,7 +4,7 @@ title: Blog
 permalink: /blog/
 ---
 
-<section class="space-y-6 border border-[#cfbfa1] bg-[#fbf7ef] p-8">
+<section class="space-y-6 border border-[#d8cab0] bg-[#fcf9f3] p-8">
   <div>
     <p class="text-xs uppercase tracking-widest text-[#7a6d56]">Chronological markdown posts</p>
     <h1 class="mt-1 text-4xl font-bold">Blog</h1>
