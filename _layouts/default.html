@@ -28,8 +28,8 @@
         background-color: #f7f1e7;
         color: #3f3527;
         background-image:
-          conic-gradient(#f7f1e7 25%, #fffdfa 0 50%, #f7f1e7 0 75%, #fffdfa 0);
-        background-size: 8px 8px;
+          conic-gradient(#f7f1e7 25%, #fbf7ef 0 50%, #f7f1e7 0 75%, #fbf7ef 0);
+        background-size: 4px 4px;
       }
 
       h1, h2, h3, h4, h5, h6 {
@@ -291,8 +291,8 @@
     {% assign is_post = true %}
   {% endif %}
   <body class="min-h-screen antialiased">
-    <div class="mx-auto min-h-screen w-full max-w-5xl border-x border-[#d8cab0] bg-[#fcf8f1]/92">
-      <header class="border-b border-[#cfbfa1] px-6 py-4 text-xs uppercase tracking-widest text-[#6f6656]">
+    <header class="w-full border-b border-[#cfbfa1] bg-[#fcf8f1] text-xs uppercase tracking-widest text-[#6f6656]">
+      <div class="mx-auto w-full max-w-5xl px-6 py-4">
         <div class="flex items-center justify-between gap-4">
           <nav class="flex items-center gap-4">
             <a href="{{ '/' | relative_url }}" class="no-underline {% if page.url == '/' %}text-[#2f3e9d]{% endif %}">HOME</a>
@@ -304,7 +304,9 @@
             <span>PROFILE ONLINE</span>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
+    <div class="mx-auto min-h-screen w-full max-w-5xl border-x border-[#d8cab0] bg-[#fcf8f1]/92">
       <main class="content px-6 py-10">
         {% if is_post %}
           <article>
