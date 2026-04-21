@@ -25,13 +25,15 @@ title: Home
   <article class="border border-[#d8cab0] bg-[#fcf7ef] p-5">
     <h2 class="text-xs uppercase tracking-widest text-[#7a6d56]">Currently working on professionally</h2>
     <p class="mt-3 text-sm text-[#5d503a]">
-      Add a short summary here about your current professional focus, role, and ongoing work streams.
+      I’m currently working as a Working Student Machine Learning Engineer at Fraunhofer IOF in Jena, focusing on
+      computer vision, image understanding, and 3D reconstruction workflows for practical applications.
     </p>
   </article>
   <article class="border border-[#d8cab0] bg-[#fcf7ef] p-5">
     <h2 class="text-xs uppercase tracking-widest text-[#7a6d56]">Open source projects</h2>
     <p class="mt-3 text-sm text-[#5d503a]">
-      Add links and one-line descriptions for small open source projects you contribute to or maintain.
+      I regularly build and share smaller coding projects and experiments on
+      <a href="https://github.com/I-am-Rudi">GitHub</a>, mostly around scientific computing and machine learning.
     </p>
   </article>
 </section>

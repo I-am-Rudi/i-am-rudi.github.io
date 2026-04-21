@@ -17,7 +17,7 @@ permalink: /about/
   <div class="grid gap-4 md:grid-cols-2">
     <article class="border border-[#d8cab0] bg-[#fcf7ef] p-5">
       <h2 class="text-xs uppercase tracking-widest text-[#7a6d56]">Focus areas</h2>
-      <ul class="mt-3 list-disc text-sm text-[#5d503a]">
+      <ul class="mt-3 list-disc pl-5 text-sm text-[#5d503a]">
         <li>Machine learning for computer vision and 3D reconstruction</li>
         <li>Quantum field theory, general relativity, and quantum gravity</li>
         <li>Scientific computing with Python, Julia, and C++</li>
