@@ -17,7 +17,7 @@ permalink: /blog/
     {% for post in site.posts %}
       <article class="rounded border border-[#d7c7ac] bg-[#f8f2e5] p-5">
         <p class="text-xs uppercase tracking-widest text-[#7a6d56]">{{ post.date | date: "%Y-%m-%d" }}</p>
-        <h2 class="mt-1 text-2xl font-bold">
+        <h2 class="mt-1 text-2xl font-bold leading-snug">
           <a class="no-underline" href="{{ post.url | relative_url }}">{{ post.title }}</a>
         </h2>
         {% if post.excerpt %}
