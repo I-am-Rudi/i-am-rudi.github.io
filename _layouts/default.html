@@ -294,11 +294,12 @@
     <header class="w-full border-b border-[#cfbfa1] bg-[#fcf8f1] text-xs uppercase tracking-widest text-[#6f6656]">
       <div class="mx-auto w-full max-w-5xl px-6 py-4">
         <div class="flex items-center justify-between gap-4">
-          <nav class="flex items-center gap-4">
-            <a href="{{ '/' | relative_url }}" class="no-underline {% if page.url == '/' %}text-[#2f3e9d]{% endif %}">HOME</a>
-            <a href="{{ '/cv/' | relative_url }}" class="no-underline {% if page.url == '/cv/' %}text-[#2f3e9d]{% endif %}">CV</a>
-            <a href="{{ '/blog/' | relative_url }}" class="no-underline {% if page.url == '/blog/' or page.layout == 'post' %}text-[#2f3e9d]{% endif %}">BLOG</a>
-          </nav>
+           <nav class="flex items-center gap-4">
+             <a href="{{ '/' | relative_url }}" class="no-underline {% if page.url == '/' %}text-[#2f3e9d]{% endif %}">HOME</a>
+             <a href="{{ '/about/' | relative_url }}" class="no-underline {% if page.url == '/about/' %}text-[#2f3e9d]{% endif %}">ABOUT</a>
+             <a href="{{ '/cv/' | relative_url }}" class="no-underline {% if page.url == '/cv/' %}text-[#2f3e9d]{% endif %}">CV</a>
+             <a href="{{ '/blog/' | relative_url }}" class="no-underline {% if page.url == '/blog/' or page.layout == 'post' %}text-[#2f3e9d]{% endif %}">BLOG</a>
+           </nav>
           <div class="flex items-center gap-2">
             <span class="inline-block h-2 w-2 border border-[#96896f] bg-[#2f3e9d]"></span>
             <span>PROFILE ONLINE</span>
