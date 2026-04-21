@@ -5,13 +5,20 @@ permalink: /about/
 ---
 
 <section class="space-y-6 border border-[#d8cab0] bg-[#fcf9f3] p-8">
-  <div>
-    <p class="text-xs uppercase tracking-widest text-[#7a6d56]">About me</p>
-    <h1 class="mt-1 text-4xl font-bold text-[#2f3e9d]">Kevin Rudolf Siebert</h1>
-    <p class="mt-3 text-sm text-[#5d503a]">
-      I am a physicist and machine learning engineer based in Jena, focused on quantum and gravitational physics,
-      computational methods, and practical AI systems.
-    </p>
+  <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+    <div class="space-y-3">
+      <p class="text-xs uppercase tracking-widest text-[#7a6d56]">About me</p>
+      <h1 class="text-4xl font-bold text-[#2f3e9d]">Kevin Rudolf Siebert</h1>
+      <p class="max-w-2xl text-sm text-[#5d503a]">
+        I am a physicist and machine learning engineer based in Jena, focused on quantum and gravitational physics,
+        computational methods, and practical AI systems.
+      </p>
+    </div>
+    <img
+      src="{{ '/assets/images/profile.jpg' | relative_url }}"
+      alt="Profile picture of Kevin Rudolf Siebert"
+      class="h-24 w-24 shrink-0 rounded-full border border-[#d8cab0] object-cover md:h-28 md:w-28"
+    />
   </div>
 
   <div class="grid gap-4 md:grid-cols-2">

@@ -46,7 +46,7 @@ title: Home
     {% for item in entries %}
       <article class="border border-[#d8cab0] bg-[#fcf7ef] p-5">
         <p class="text-xs uppercase tracking-widest text-[#7a6d56]">{{ item.date | date: "%Y-%m-%d" }}</p>
-        <h3 class="mt-2 text-xl font-bold">
+        <h3 class="mt-2 text-xl font-bold leading-snug">
           <a class="no-underline" href="{{ item.url | relative_url }}">{{ item.title }}</a>
         </h3>
         {% if item.excerpt %}
