@@ -53,18 +53,26 @@
         color: #2f3e9d;
       }
 
-      .content h2 {
+      .content h2:not(.card-title) {
         margin-top: 1.6rem;
         margin-bottom: 0.6rem;
         font-size: 1.45rem;
         font-weight: 700;
       }
 
-      .content h3 {
+      .content h3:not(.card-title) {
         margin-top: 1.2rem;
         margin-bottom: 0.35rem;
         font-size: 1.1rem;
         font-weight: 700;
+      }
+
+      .content .card-title {
+        margin: 0;
+        font-size: 0.85rem;
+        letter-spacing: 0.18em;
+        line-height: 1.5;
+        text-transform: uppercase;
       }
 
       .content p,
