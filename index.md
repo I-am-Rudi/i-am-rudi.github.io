@@ -13,14 +13,21 @@ Visit the CV page for an overview of my education and experience.
 {% include profile-intro.html subtitle="Quick introduction" title="Hi, I’m Rudi." content=intro_content image_src="/assets/images/profile.jpg" image_alt="Profile picture of Rudi" image_class="h-24 w-24 shrink-0 rounded-full border border-[#d8cab0] object-cover md:h-28 md:w-28 md:self-center md:-ml-3" %}
 
 {% capture currently_content %}
-- I am actively looking for a PhD position in the field of quantum gravity,
-  fundamental physics, or machine learning for scientific applications.
+- I am actively looking for a PhD position in the fields of fundamental physics,
+  quantum gravity, and/or machine learning for scientific applications.
 - I have just completed my master’s degree at the Friedrich-Schiller-University in Jena with a focus on quantum and gravitational physics. 
 - Currently, I am working as a machine learning engineer at the Fraunhofer Institute for Applied Optics and Precision Engineering (IOF) in Jena, where I focus on computer vision.
 {% endcapture %}
 
 {% capture projects_content %}
-I regularly build and share smaller coding projects and experiments on [GitHub](https://github.com/I-am-Rudi), mostly around scientific computing and machine learning.
+Here are some projects I’ve worked on in my spare time on, which hopefully
+bring some value to other people too.
+
+- [Writers Crucible](https://github.com/I-am-Rudi/WritersCrucible)
+  -> A small extension that allows to track and gamify writing sessions in
+    Visual Studio Code (my currently preferred LaTeX editor).
+- [Workout Journal](https://github.com/I-am-Rudi/workout-journal) 
+    -> A note-first extension for Obsidian to track workout sessions and progress directly in the note-taking app.
 {% endcapture %}
 
 {% capture home_cards %}
@@ -29,7 +36,7 @@ I regularly build and share smaller coding projects and experiments on [GitHub](
 {% endcapture %}
 {% include grid.html class="mt-10 grid gap-4 md:grid-cols-2" content=home_cards %}
 
-{% include eyebrow.html text="Recent entries" %}
+{% include eyebrow.html text="Recent entries" style="margin-top:6rem;" %}
 {% assign entries = site.projects | concat: site.posts %}
 {% assign entries = entries | sort: "date" | reverse %}
 {% capture recent_entries %}
