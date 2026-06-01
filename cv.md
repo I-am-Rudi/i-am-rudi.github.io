@@ -4,7 +4,7 @@ title: CV
 permalink: /cv/
 ---
 
-<section class="space-y-4 border border-[#d8cab0] bg-[#fcf9f3] p-8">
+<section class="section">
   <div class="flex flex-col gap-2 md:flex-row md:items-start md:justify-between">
     <div>
       <h1 class="text-4xl font-bold text-[#2f3e9d]">Kevin Rudolf Siebert</h1>
@@ -19,7 +19,7 @@ permalink: /cv/
   </div>
 
   <div class="pt-2">
-    <div class="cv-divider"></div>
+    <div class="divider"></div>
     <h2 class="mt-2 text-3xl font-semibold text-[#2f3e9d]">Education</h2>
     <p class="text-sm italic text-[#8a816f]">Grades in German grading system, where 1.0 is the best grade and 4.0 the lowest passing grade.</p>
   </div>
@@ -77,7 +77,7 @@ permalink: /cv/
   </div>
 
   <div class="pt-3">
-    <div class="cv-divider"></div>
+    <div class="divider"></div>
     <h2 class="mt-2 text-3xl font-semibold text-[#2f3e9d]">Master Thesis</h2>
   </div>
 
@@ -107,7 +107,7 @@ permalink: /cv/
   </div>
 
   <div class="pt-3">
-    <div class="cv-divider"></div>
+    <div class="divider"></div>
     <h2 class="mt-2 text-3xl font-semibold text-[#2f3e9d]">Bachelor Thesis</h2>
   </div>
 
@@ -134,7 +134,7 @@ permalink: /cv/
   </div>
 
   <div class="pt-3">
-    <div class="cv-divider"></div>
+    <div class="divider"></div>
     <h2 class="mt-2 text-3xl font-semibold text-[#2f3e9d]">Experience</h2>
   </div>
 
@@ -183,7 +183,7 @@ permalink: /cv/
   </div>
 
   <div class="pt-3">
-    <div class="cv-divider"></div>
+    <div class="divider"></div>
     <h2 class="mt-2 text-3xl font-semibold text-[#2f3e9d]">Key Skills</h2>
   </div>
 

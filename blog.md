@@ -4,7 +4,7 @@ title: Blog
 permalink: /blog/
 ---
 
-<section class="space-y-6 border border-[#d8cab0] bg-[#fcf9f3] p-8">
+<section class="section">
   <div>
     <p class="text-xs uppercase tracking-widest text-[#7a6d56]">Chronological markdown posts</p>
     <h1 class="mt-1 text-4xl font-bold">Blog</h1>
@@ -15,7 +15,7 @@ permalink: /blog/
 
   <div class="space-y-4">
     {% for post in site.posts %}
-      <article class="rounded border border-[#d7c7ac] bg-[#f8f2e5] p-5">
+      <article class="card-blog">
         <p class="text-xs uppercase tracking-widest text-[#7a6d56]">{{ post.date | date: "%Y-%m-%d" }}</p>
         <h2 class="mt-1 text-2xl font-bold leading-snug">
           <a class="no-underline" href="{{ post.url | relative_url }}">{{ post.title }}</a>

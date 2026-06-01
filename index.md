@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-<section class="space-y-6 border border-[#d8cab0] bg-[#fcf9f3] p-8">
+<section class="section">
   <div class="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
     <div class="space-y-4">
       <p class="text-xs uppercase tracking-widest text-[#7a6d56]">Quick introduction</p>
@@ -22,14 +22,14 @@ title: Home
 </section>
 
 <section class="mt-10 grid gap-4 md:grid-cols-2">
-  <article class="border border-[#d8cab0] bg-[#fcf7ef] p-5">
+  <article class="card">
     <h2 class="card-title text-xs uppercase tracking-widest text-[#7a6d56]">Currently working on professionally</h2>
     <p class="mt-3 text-sm text-[#5d503a]">
-      I’m currently working as a Working Student Machine Learning Engineer at Fraunhofer IOF in Jena, focusing on
+      I'm currently working as a Working Student Machine Learning Engineer at Fraunhofer IOF in Jena, focusing on
       computer vision, image understanding, and 3D reconstruction workflows for practical applications.
     </p>
   </article>
-  <article class="border border-[#d8cab0] bg-[#fcf7ef] p-5">
+  <article class="card">
     <h2 class="card-title text-xs uppercase tracking-widest text-[#7a6d56]">Open source projects</h2>
     <p class="mt-3 text-sm text-[#5d503a]">
       I regularly build and share smaller coding projects and experiments on
@@ -44,7 +44,7 @@ title: Home
     {% assign entries = site.projects | concat: site.posts %}
     {% assign entries = entries | sort: "date" | reverse %}
     {% for item in entries %}
-      <article class="border border-[#d8cab0] bg-[#fcf7ef] p-5">
+      <article class="card">
         <p class="text-xs uppercase tracking-widest text-[#7a6d56]">{{ item.date | date: "%Y-%m-%d" }}</p>
         <h3 class="mt-2 text-xl font-bold leading-snug">
           <a class="no-underline" href="{{ item.url | relative_url }}">{{ item.title }}</a>

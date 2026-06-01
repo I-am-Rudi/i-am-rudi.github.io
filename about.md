@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<section class="space-y-6 border border-[#d8cab0] bg-[#fcf9f3] p-8">
+<section class="section">
   <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
     <div class="space-y-3">
       <p class="text-xs uppercase tracking-widest text-[#7a6d56]">About me</p>
@@ -22,7 +22,7 @@ permalink: /about/
   </div>
 
   <div class="grid gap-4 md:grid-cols-2">
-    <article class="border border-[#d8cab0] bg-[#fcf7ef] p-5">
+    <article class="card">
       <h2 class="card-title text-xs uppercase tracking-widest text-[#7a6d56]">Focus areas</h2>
       <ul class="mt-3 list-disc pl-5 text-sm text-[#5d503a]">
         <li>Machine learning for computer vision and 3D reconstruction</li>
@@ -30,7 +30,7 @@ permalink: /about/
         <li>Scientific computing with Python, Julia, and C++</li>
       </ul>
     </article>
-    <article class="border border-[#d8cab0] bg-[#fcf7ef] p-5">
+    <article class="card">
       <h2 class="card-title text-xs uppercase tracking-widest text-[#7a6d56]">Quick links</h2>
       <ul class="mt-3 space-y-2 text-sm text-[#5d503a]">
         <li><a href="{{ '/cv/' | relative_url }}">Curriculum Vitae</a></li>
