@@ -15,7 +15,7 @@ kr.siebert@icloud.com
 {% endcapture %}
 
 {% capture cv_sections %}
-{% include cv-heading.html padding_class="pt-2" title="Education" description="Grades in German grading system, where 1.0 is the best grade and 4.0 the lowest passing grade." %}
+{% include cv-heading.html padding_class="pt-2" title="Education"%}
 
 {% capture master_science_content %}
 **Friedrich-Schiller-University, Jena, grade: 1.2.**
