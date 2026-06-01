@@ -4,26 +4,19 @@ title: Blog
 permalink: /blog/
 ---
 
-<section class="section">
-  <div>
-    <p class="text-xs uppercase tracking-widest text-[#7a6d56]">Chronological markdown posts</p>
-    <h1 class="mt-1 text-4xl font-bold">Blog</h1>
-    <p class="mt-2 text-sm text-[#5d503a]">
-      Notes and updates rendered with clean, readable defaults inspired by Obsidian-style markdown presentation.
-    </p>
-  </div>
+{% include section-header.html subtitle="Chronological markdown posts" title="Blog" description="Notes and updates rendered with clean, readable defaults inspired by Obsidian-style markdown presentation." %}
 
-  <div class="space-y-4">
-    {% for post in site.posts %}
-      <article class="card-blog">
-        <p class="text-xs uppercase tracking-widest text-[#7a6d56]">{{ post.date | date: "%Y-%m-%d" }}</p>
-        <h2 class="mt-1 text-2xl font-bold leading-snug">
-          <a class="no-underline" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        </h2>
-        {% if post.excerpt %}
-          <p class="mt-3 text-sm text-[#5d503a]">{{ post.excerpt | strip_html | truncate: 220 }}</p>
-        {% endif %}
-      </article>
-    {% endfor %}
-  </div>
-</section>
+{% capture blog_posts %}
+{% for post in site.posts %}
+{% capture post_content %}
+{{ post.date | date: "%Y-%m-%d" }}
+
+## [{{ post.title }}]({{ post.url | relative_url }})
+{% if post.excerpt %}
+{{ post.excerpt | strip_html | truncate: 220 }}
+{% endif %}
+{% endcapture %}
+{% include card.html variant="card-blog" content=post_content %}
+{% endfor %}
+{% endcapture %}
+{% include stack.html content=blog_posts %}

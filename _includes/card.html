@@ -1,1 +1,9 @@
-<article class="border border-[#d8cab0] bg-[#fcf7ef] p-5">{{ include.content }}</article>
+{% assign card_class = include.variant | default: "card" %}
+<article class="{{ card_class }}">
+	{% if include.title %}
+		<h2 class="card-title text-xs uppercase tracking-widest text-[#7a6d56]">{{ include.title }}</h2>
+	{% endif %}
+	<div class="markdown-body mt-3 text-sm text-[#5d503a]">
+		{{ include.content | markdownify }}
+	</div>
+</article>
