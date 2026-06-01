@@ -10,15 +10,15 @@ I am a physicist and machine learning engineer based in Jena, focused on quantum
 {% include profile-intro.html subtitle="About me" title="Kevin Rudolf Siebert" content=about_intro image_src="/assets/images/profile.jpg" image_alt="Profile picture of Kevin Rudolf Siebert" image_class="h-24 w-24 shrink-0 rounded-full border border-[#d8cab0] object-cover md:h-28 md:w-28 md:self-center md:-ml-3" %}
 
 {% capture focus_areas_content %}
-- Machine learning for computer vision and 3D reconstruction
 - Quantum field theory, general relativity, and quantum gravity
 - Scientific computing with Python, Julia, and C++
+- Machine learning applied to problems in physics
 {% endcapture %}
 
 {% capture quick_links_content %}
 - [Curriculum Vitae]({{ '/cv/' | relative_url }})
 - [Blog]({{ '/blog/' | relative_url }})
-- [kr.siebert@icloud.com](mailto:kr.siebert@icloud.com)
+- [k.r.siebert@icloud.com](mailto:k.r.siebert@icloud.com)
 - [GitHub: I-am-Rudi](https://github.com/I-am-Rudi)
 {% endcapture %}
 

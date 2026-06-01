@@ -17,7 +17,7 @@
       {% endif %}
     </div>
     {% if include.right_content and include.right_below != true %}
-      <div class="{{ include.right_class | default: 'text-sm cv-meta' }}">
+      <div class="{{ include.right_class | default: 'text-sm cv-meta' }}" {% if include.right_style %}style="{{ include.right_style }}"{% endif %}>
         <div class="markdown-body">{{ include.right_content | markdownify }}</div>
       </div>
     {% elsif include.image_src %}

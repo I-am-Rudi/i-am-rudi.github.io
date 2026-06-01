@@ -5,22 +5,17 @@ permalink: /cv/
 ---
 
 {% capture cv_right_content %}
-Am Egelsee 10
+[Github](https://github.com/I-am-Rudi)
 
-07743 Jena
-
-+49 151 0501030
-
-kr.siebert@icloud.com
+[k.r.siebert@icloud.com](mailto:k.r.siebert@icloud.com)
 {% endcapture %}
 
 {% capture cv_sections %}
 {% include cv-heading.html padding_class="pt-2" title="Education"%}
 
 {% capture master_science_content %}
-**Friedrich-Schiller-University, Jena, grade: 1.2.**
+**Friedrich-Schiller-University, Jena.**
 
-- Specialization: Gravitational and Quantum Physics
 - Emphasis on Quantum Field Theory, General Relativity and Quantum Gravity
 {% endcapture %}
 {% include cv-item.html date="10/2021 – 12/2025" content=master_science_content %}
@@ -33,20 +28,9 @@ kr.siebert@icloud.com
 {% include cv-item.html date="09/2022 – 07/2023" content=year_abroad_content %}
 
 {% capture bachelor_science_content %}
-**Friedrich-Schiller-University, Jena, grade: 1.8.**
+**Friedrich-Schiller-University, Jena.**
 {% endcapture %}
 {% include cv-item.html date="10/2018 – 10/2021" content=bachelor_science_content %}
-
-{% capture coursework_content %}
-**Quantum Theory, QFT & GR**
-
-Quantum Theory (1.0); Quantum Field Theory (1.7); Quantum Information Theory (1.7); Selected Topics in Quantum Information (1.0); Relativistic Physics (1.7); Current Topics in Gravitational and Quantum Theory II, III (1.0, 1.0)
-
-**Mathematics & Computer Science**
-
-Complex Analysis (2.0), Informatics I, II (1.0, 1.3); Computational Physics I, II (2.0) & IV (1.3); Machine Learning (2.0)
-{% endcapture %}
-{% include cv-item.html date="Relevant coursework" content=coursework_content %}
 
 {% include cv-heading.html title="Master Thesis" %}
 
@@ -59,11 +43,6 @@ Complex Analysis (2.0), Informatics I, II (1.0, 1.3); Computational Physics I, I
 Prof. Dr. Holger Gies & Dr. Sebastian Steinhaus
 {% endcapture %}
 {% include cv-item.html date="Supervisors" content=master_thesis_supervisors %}
-
-{% capture master_thesis_grade %}
-1.0
-{% endcapture %}
-{% include cv-item.html date="Grade" content=master_thesis_grade %}
 
 {% capture master_thesis_description %}
 - Studying contributions of discrete geometries to the state sum in the Ooguri model
@@ -84,14 +63,9 @@ Prof. Dr. Martin Ammon & Dr. Georg Bergner
 {% endcapture %}
 {% include cv-item.html date="Supervisors" content=bachelor_thesis_supervisors %}
 
-{% capture bachelor_thesis_grade %}
-1.5
-{% endcapture %}
-{% include cv-item.html date="Grade" content=bachelor_thesis_grade %}
-
 {% capture bachelor_thesis_description %}
 - Bootstrap method from conformal field theory applied to anharmonic oscillators
-- Extensive comparison to established numerical methods
+- Comparison to established numerical methods
 {% endcapture %}
 {% include cv-item.html date="Description" content=bachelor_thesis_description %}
 
@@ -102,9 +76,6 @@ Prof. Dr. Martin Ammon & Dr. Georg Bergner
 
 - Research and development of computer vision machine learning algorithms
 - Main focus on image classification, detection and 3D-reconstruction
-- Specialized models (2D/3D Gaussian Splatting and Neural Radiance Fields)
-- Relevant workflow: convolutional neural networks and transformer networks with focus on shifted window transformers (Swin)
-- Researched, developed and deployed an industry-grade deep learning pipeline on my own
 {% endcapture %}
 {% include cv-item.html date="11/2023 – today" content=ml_engineer_content %}
 
@@ -147,7 +118,7 @@ LaTeX, TikZ, PGFplots, Mermaid
 {% include cv-item.html date="Documentation" content=documentation_skills %}
 
 {% capture programming_skills %}
-Julia, Python (numpy, matplotlib, pytorch, numba), C++
+Julia, Python, C++, C, JavaScript, Typescript
 {% endcapture %}
 {% include cv-item.html date="Programming" content=programming_skills %}
 
@@ -162,5 +133,5 @@ Linux, Git, Inkscape, Obsidian
 {% include cv-item.html date="Software" content=software_skills %}
 {% endcapture %}
 
-{% include profile-intro.html subtitle="Curriculum Vitae" title="Kevin Rudolf Siebert" right_content=cv_right_content content_class="space-y-2 text-[#5d503a]" right_class="text-sm cv-meta md:pt-10" %}
+{% include profile-intro.html subtitle="Curriculum Vitae" title="Kevin Rudolf Siebert" right_content=cv_right_content content_class="space-y-2 text-[#5d503a]" right_class="text-sm cv-meta md:pt-10 md:-ml-6" right_style="margin-left:-1.5rem;" %}
 {% include card-shell.html class="mt-10" content=cv_sections %}
