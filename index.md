@@ -9,8 +9,10 @@ title: Home
       <p class="text-xs uppercase tracking-widest text-[#7a6d56]">Quick introduction</p>
       <h1 class="text-4xl font-extrabold leading-tight text-[#2f3e9d] md:text-6xl">Hi, I’m Rudi.</h1>
       <p class="max-w-2xl text-sm text-[#5d503a]">
-        Welcome to my homepage. This is a concise overview of what I’m working on and where to find more details.
-        Visit the CV page for structured background information and the blog for chronological markdown notes.
+        Welcome to my homepage. I’m a physicist and part time machine learning engineer based in Jena, Germany.
+      </p>
+      <p class="max-w-2xl text-sm text-[#5d503a]">
+        Visit the CV page for an overview of my education and experience.
       </p>
     </div>
     <img
@@ -23,10 +25,12 @@ title: Home
 
 <section class="mt-10 grid gap-4 md:grid-cols-2">
   <article class="card">
-    <h2 class="card-title text-xs uppercase tracking-widest text-[#7a6d56]">Currently working on professionally</h2>
+    <h2 class="card-title text-xs uppercase tracking-widest text-[#7a6d56]">Currently</h2>
     <p class="mt-3 text-sm text-[#5d503a]">
-      I'm currently working as a Working Student Machine Learning Engineer at Fraunhofer IOF in Jena, focusing on
-      computer vision, image understanding, and 3D reconstruction workflows for practical applications.
+      I am actively looking for a PhD position in the field of quantum gravity, fundamental physics, or machine learning for scientific applications.
+    </p>
+    <p class="mt-3 text-sm text-[#5d503a]">
+      I have just completed my master’s degree at the Friedrich-Schiller-University in Jena with a focus on quantum and gravitational physics. Currently I am working as a machine learning engineer at the Fraunhofer Institute for Applied Optics and Precision Engineering (IOF) in Jena, where I focus on computer vision.
     </p>
   </article>
   <article class="card">
