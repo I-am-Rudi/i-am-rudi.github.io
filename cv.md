@@ -169,4 +169,4 @@ Linux, Git, Inkscape, Obsidian
 {% endcapture %}
 
 {% include profile-intro.html content=cv_left_content right_content=cv_right_content content_class="space-y-2 text-[#5d503a]" right_class="text-sm cv-meta" %}
-{% include stack.html class="mt-10 space-y-0" content=cv_sections %}
+{% include card-shell.html class="mt-10" content=cv_sections %}
