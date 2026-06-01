@@ -5,9 +5,9 @@ permalink: /blog/
 ---
 
 {% capture blog_intro %}
-Notes and updates rendered with clean, readable defaults inspired by Obsidian-style markdown presentation.
+This part of the website is for some thoughts that I want to
 {% endcapture %}
-{% include profile-intro.html subtitle="Chronological markdown posts" title="Blog" content=blog_intro right_content="Markdown posts, notes, and experiments." right_below=true %}
+{% include profile-intro.html subtitle="Markdown posts, notes, and experiments." title="Blog" content=blog_intro right_content="" right_below=true %}
 
 {% capture blog_posts %}
 {% for post in site.posts %}
