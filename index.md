@@ -10,12 +10,13 @@ Visit the CV page for an overview of my education and experience.
 {% endcapture %}
 
 
-{% include profile-intro.html subtitle="Quick introduction" title="Hi, I’m Rudi." content=intro_content image_src="/assets/images/profile.jpg" image_alt="Profile picture of Rudi" %}
+{% include profile-intro.html subtitle="Quick introduction" title="Hi, I’m Rudi." content=intro_content image_src="/assets/images/profile.jpg" image_alt="Profile picture of Rudi" image_class="h-24 w-24 shrink-0 rounded-full border border-[#d8cab0] object-cover md:h-28 md:w-28 md:self-center md:-ml-3" %}
 
 {% capture currently_content %}
-I am actively looking for a PhD position in the field of quantum gravity, fundamental physics, or machine learning for scientific applications.
-
-I have just completed my master’s degree at the Friedrich-Schiller-University in Jena with a focus on quantum and gravitational physics. Currently I am working as a machine learning engineer at the Fraunhofer Institute for Applied Optics and Precision Engineering (IOF) in Jena, where I focus on computer vision.
+- I am actively looking for a PhD position in the field of quantum gravity,
+  fundamental physics, or machine learning for scientific applications.
+- I have just completed my master’s degree at the Friedrich-Schiller-University in Jena with a focus on quantum and gravitational physics. 
+- Currently, I am working as a machine learning engineer at the Fraunhofer Institute for Applied Optics and Precision Engineering (IOF) in Jena, where I focus on computer vision.
 {% endcapture %}
 
 {% capture projects_content %}

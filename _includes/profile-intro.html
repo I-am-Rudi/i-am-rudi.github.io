@@ -1,5 +1,5 @@
 <section class="section md:h-[19rem]">
-  <div class="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
+  <div class="flex flex-col gap-6 md:h-full md:flex-row md:items-center md:justify-between">
     <div class="{{ include.content_class | default: 'space-y-4 max-w-2xl text-sm text-[#5d503a]' }}">
       {% if include.subtitle %}
         <p class="text-xs uppercase tracking-widest text-[#7a6d56]">{{ include.subtitle }}</p>
@@ -10,8 +10,13 @@
       <div class="markdown-body">
         {{ include.content | markdownify }}
       </div>
+      {% if include.right_content and include.right_below %}
+        <div class="mt-4 text-sm cv-meta">
+          <div class="markdown-body">{{ include.right_content | markdownify }}</div>
+        </div>
+      {% endif %}
     </div>
-    {% if include.right_content %}
+    {% if include.right_content and include.right_below != true %}
       <div class="{{ include.right_class | default: 'text-sm cv-meta' }}">
         <div class="markdown-body">{{ include.right_content | markdownify }}</div>
       </div>
