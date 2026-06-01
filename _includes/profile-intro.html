@@ -5,7 +5,7 @@
         <p class="text-xs uppercase tracking-widest text-[#7a6d56]">{{ include.subtitle }}</p>
       {% endif %}
       {% if include.title %}
-        <h1 class="{{ include.title_class | default: 'text-4xl font-extrabold leading-tight text-[#2f3e9d] md:text-6xl' }}">{{ include.title }}</h1>
+        <h1 class="{{ include.title_class | default: 'text-4xl font-bold text-[#2f3e9d] md:text-5xl' }}">{{ include.title }}</h1>
       {% endif %}
       <div class="markdown-body">
         {{ include.content | markdownify }}

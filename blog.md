@@ -4,7 +4,10 @@ title: Blog
 permalink: /blog/
 ---
 
-{% include section-header.html subtitle="Chronological markdown posts" title="Blog" description="Notes and updates rendered with clean, readable defaults inspired by Obsidian-style markdown presentation." %}
+{% capture blog_intro %}
+Notes and updates rendered with clean, readable defaults inspired by Obsidian-style markdown presentation.
+{% endcapture %}
+{% include profile-intro.html subtitle="Chronological markdown posts" title="Blog" content=blog_intro right_content="Markdown posts, notes, and experiments." %}
 
 {% capture blog_posts %}
 {% for post in site.posts %}
@@ -19,4 +22,4 @@ permalink: /blog/
 {% include card.html variant="card-blog" content=post_content %}
 {% endfor %}
 {% endcapture %}
-{% include stack.html content=blog_posts %}
+{% include stack.html class="mt-10 space-y-4" content=blog_posts %}
