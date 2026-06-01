@@ -5,8 +5,6 @@ permalink: /cv/
 ---
 
 {% capture cv_left_content %}
-# Kevin Rudolf Siebert
-
 _Curriculum Vitae_
 {% endcapture %}
 
@@ -168,5 +166,5 @@ Linux, Git, Inkscape, Obsidian
 {% include cv-item.html date="Software" content=software_skills %}
 {% endcapture %}
 
-{% include profile-intro.html content=cv_left_content right_content=cv_right_content content_class="space-y-2 text-[#5d503a]" right_class="text-sm cv-meta" %}
+{% include profile-intro.html title="Kevin Rudolf Siebert" content=cv_left_content right_content=cv_right_content content_class="space-y-2 text-[#5d503a]" right_class="text-sm cv-meta" %}
 {% include card-shell.html class="mt-10" content=cv_sections %}
