@@ -15,7 +15,9 @@ Visit the CV page for an overview of my education and experience.
 {% capture currently_content %}
 - I am actively looking for a PhD position in the fields of fundamental physics,
   quantum gravity, and/or machine learning for scientific applications.
-- I have just completed my master’s degree at the Friedrich-Schiller-University in Jena with a focus on quantum and gravitational physics. 
+
+- I have just completed my master’s degree at the Friedrich-Schiller-University in Jena with a focus on quantum and gravitational physics.
+   
 - Currently, I am working as a machine learning engineer at the Fraunhofer Institute for Applied Optics and Precision Engineering (IOF) in Jena, where I focus on computer vision.
 {% endcapture %}
 
@@ -26,8 +28,18 @@ bring some value to other people too.
 - [Writers Crucible](https://github.com/I-am-Rudi/WritersCrucible)
   -> A small extension that allows to track and gamify writing sessions in
     Visual Studio Code (my currently preferred LaTeX editor).
+
 - [Workout Journal](https://github.com/I-am-Rudi/workout-journal) 
-    -> A note-first extension for Obsidian to track workout sessions and progress directly in the note-taking app.
+    -> A note-first extension for Obsidian to track workout sessions and
+    progress directly in the note-taking app.+
+
+- [Styling for Plots.jl and Matplotlib](https://github.com/I-am-Rudi/plot-tol-config) -> This is a
+  unified Styling for Plots.jl and Matplotlib that is based on the [color palette of Paul Tol](https://sronpersonalpages.nl/~pault/). It is designed to be used
+  for scientific publications and presentations.
+
+- [Rollover inbox in dataview-js](https://github.com/I-am-Rudi/obsidian-rollover-inbox) -> A small
+  dataview-js script for Obsidian that allows to create a rollover inbox for
+  daily notes. 
 {% endcapture %}
 
 {% capture home_cards %}

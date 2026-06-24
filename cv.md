@@ -7,7 +7,7 @@ permalink: /cv/
 {% capture cv_right_content %}
 [Github](https://github.com/I-am-Rudi)
 
-[k.r.siebert@icloud.com](mailto:k.r.siebert@icloud.com)
+[E-Mail](mailto:k.r.siebert@icloud.com)
 {% endcapture %}
 
 {% capture cv_sections %}
@@ -44,13 +44,6 @@ Prof. Dr. Holger Gies & Dr. Sebastian Steinhaus
 {% endcapture %}
 {% include cv-item.html date="Supervisors" content=master_thesis_supervisors %}
 
-{% capture master_thesis_description %}
-- Studying contributions of discrete geometries to the state sum in the Ooguri model
-- Investigating this topological field theory model as a toy model for full quantum gravitational state sums in the spin foam approach to quantum gravity
-- Using Monte Carlo methods as a mathematical probe into these contributions
-{% endcapture %}
-{% include cv-item.html date="Description" content=master_thesis_description %}
-
 {% include cv-heading.html title="Bachelor Thesis" %}
 
 {% capture bachelor_thesis_title %}
@@ -62,12 +55,6 @@ Prof. Dr. Holger Gies & Dr. Sebastian Steinhaus
 Prof. Dr. Martin Ammon & Dr. Georg Bergner
 {% endcapture %}
 {% include cv-item.html date="Supervisors" content=bachelor_thesis_supervisors %}
-
-{% capture bachelor_thesis_description %}
-- Bootstrap method from conformal field theory applied to anharmonic oscillators
-- Comparison to established numerical methods
-{% endcapture %}
-{% include cv-item.html date="Description" content=bachelor_thesis_description %}
 
 {% include cv-heading.html title="Experience" %}
 
@@ -102,16 +89,6 @@ Prof. Dr. Martin Ammon & Dr. Georg Bergner
 
 {% include cv-heading.html title="Key Skills" %}
 
-{% capture physics_skills %}
-Quantum Field Theory, General Relativity, Quantum Gravity, Quantum Information Theory, Computational Physics
-{% endcapture %}
-{% include cv-item.html date="Physics" content=physics_skills %}
-
-{% capture math_skills %}
-Group Theory and Representation Theory, Lie Algebras, Differential Geometry, Discrete Geometry, Complex Analysis, Algebraic Topology, Algebraic Geometry
-{% endcapture %}
-{% include cv-item.html date="Mathematics" content=math_skills %}
-
 {% capture documentation_skills %}
 LaTeX, TikZ, PGFplots, Mermaid
 {% endcapture %}
@@ -128,7 +105,7 @@ Wolfram language/Mathematica, SymPy
 {% include cv-item.html date="Computer Algebra" content=computer_algebra_skills %}
 
 {% capture software_skills %}
-Linux, Git, Inkscape, Obsidian
+Linux, Git, Docker, Inkscape, Obsidian, Vim/NeoVim, Visual Studio Code
 {% endcapture %}
 {% include cv-item.html date="Software" content=software_skills %}
 {% endcapture %}

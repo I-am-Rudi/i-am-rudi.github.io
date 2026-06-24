@@ -18,7 +18,7 @@ I am a physicist and machine learning engineer based in Jena, focused on quantum
 {% capture quick_links_content %}
 - [Curriculum Vitae]({{ '/cv/' | relative_url }})
 - [Blog]({{ '/blog/' | relative_url }})
-- [k.r.siebert@icloud.com](mailto:k.r.siebert@icloud.com)
+- [E-Mail](mailto:k.r.siebert@icloud.com)
 - [GitHub: I-am-Rudi](https://github.com/I-am-Rudi)
 {% endcapture %}
 

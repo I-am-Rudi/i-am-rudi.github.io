@@ -5,9 +5,10 @@ permalink: /blog/
 ---
 
 {% capture blog_intro %}
-This part of the website is for some thoughts that I want to
+This part of the website is for some thoughts I want to publish as small notes
+or posts. For now this is under construction and will just show one example.
 {% endcapture %}
-{% include profile-intro.html subtitle="Markdown posts, notes, and experiments." title="Blog" content=blog_intro right_content="" right_below=true %}
+{% include profile-intro.html subtitle="Posts, notes, and experiments." title="Blog" content=blog_intro right_content="" right_below=true %}
 
 {% capture blog_posts %}
 {% for post in site.posts %}

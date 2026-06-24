@@ -5,7 +5,7 @@ title: "Example Markdown Post"
 
 ## SYSTEM NOTE
 
-This post validates baseline markdown styling in the portfolio shell.
+This post validates baseline markdown styling.
 
 ### CHECKLIST
 
