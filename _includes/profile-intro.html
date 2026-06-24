@@ -1,6 +1,6 @@
 <section class="section md:h-[19rem]">
-  <div class="flex flex-col gap-6 md:h-full md:flex-row md:items-center md:justify-between">
-    <div class="{{ include.content_class | default: 'space-y-4 max-w-2xl text-sm text-[#5d503a]' }}">
+  <div class="flex flex-row gap-6 md:h-full items-start md:items-center md:justify-between">
+    <div class="{{ include.content_class | default: 'space-y-4 max-w-2xl text-sm text-[#5d503a]' }} flex-1 min-w-0">
       {% if include.subtitle %}
         <p class="text-xs uppercase tracking-widest text-[#7a6d56]">{{ include.subtitle }}</p>
       {% endif %}
