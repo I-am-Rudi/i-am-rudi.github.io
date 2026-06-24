@@ -10,7 +10,7 @@ Visit the CV page for an overview of my education and experience.
 {% endcapture %}
 
 
-{% include profile-intro.html subtitle="Quick introduction" title="Hi, I’m Rudi." content=intro_content image_src="/assets/images/profile.jpg" image_alt="Profile picture of Rudi" image_class="h-24 w-24 shrink-0 rounded-full border border-[#d8cab0] object-cover md:h-28 md:w-28 md:self-center md:-ml-3" %}
+{% include profile-intro.html subtitle="Quick introduction" title="Hi, I’m Rudi." content=intro_content image_src="/assets/images/profile.jpg" image_alt="Profile picture of Rudi" image_class="h-24 w-24 shrink-0 rounded-full border border-[#d8cab0] object-cover mt-8 md:mt-0 md:h-28 md:w-28 md:self-center md:-ml-3" %}
 
 {% capture currently_content %}
 - I am actively looking for a PhD position in the fields of fundamental physics,
