@@ -1,17 +1,17 @@
-<section class="section md:h-[19rem]">
-  <div class="flex flex-row gap-6 md:h-full items-start md:items-center md:justify-between">
-    <div class="{{ include.content_class | default: 'space-y-4 max-w-2xl text-sm text-[#5d503a]' }} flex-1 min-w-0">
+<section class="section h-[19rem]">
+  <div class="flex flex-row gap-6 h-full items-start md:items-center md:justify-between">
+    <div class="{{ include.content_class | default: 'space-y-4 max-w-2xl text-sm text-[#5d503a]' }} flex-1 min-w-0 flex flex-col min-h-0 self-stretch">
       {% if include.subtitle %}
-        <p class="text-xs uppercase tracking-widest text-[#7a6d56]">{{ include.subtitle }}</p>
+        <p class="shrink-0 text-xs uppercase tracking-widest text-[#7a6d56]">{{ include.subtitle }}</p>
       {% endif %}
       {% if include.title %}
-        <h1 class="{{ include.title_class | default: 'text-4xl font-bold text-[#2f3e9d] md:text-5xl' }}">{{ include.title }}</h1>
+        <h1 class="{{ include.title_class | default: 'shrink-0 text-4xl font-bold text-[#2f3e9d] md:text-5xl' }}">{{ include.title }}</h1>
       {% endif %}
-      <div class="markdown-body">
-        {{ include.content | markdownify }}
+      <div class="hero-markdown-body flex-1 min-h-0 overflow-hidden">
+        <div class="hero-content-inner markdown-body">{{ include.content | markdownify }}</div>
       </div>
       {% if include.right_content and include.right_below %}
-        <div class="mt-4 text-sm cv-meta">
+        <div class="shrink-0 mt-4 text-sm cv-meta">
           <div class="markdown-body">{{ include.right_content | markdownify }}</div>
         </div>
       {% endif %}
@@ -29,3 +29,25 @@
     {% endif %}
   </div>
 </section>
+<script>
+  (function () {
+    function clampHero() {
+      var outer = document.querySelector('.hero-markdown-body');
+      var inner = document.querySelector('.hero-content-inner');
+      if (!inner || !inner.textContent.trim()) return;
+      inner.style.webkitLineClamp = '';
+      var h = outer ? outer.clientHeight : 0;
+      var lh = parseFloat(getComputedStyle(inner).lineHeight);
+      if (h > 0 && lh > 0) {
+        var lines = Math.floor(h / lh);
+        if (lines > 0) inner.style.webkitLineClamp = String(lines);
+      }
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', clampHero);
+    } else {
+      clampHero();
+    }
+    window.addEventListener('resize', clampHero);
+  })();
+</script>

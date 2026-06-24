@@ -7,7 +7,7 @@ permalink: /about/
 {% capture about_intro %}
 I am a physicist and machine learning engineer based in Jena, focused on quantum and gravitational physics, computational methods, and practical AI systems.
 {% endcapture %}
-{% include profile-intro.html subtitle="About me" title="Kevin Rudolf Siebert" content=about_intro image_src="/assets/images/profile.jpg" image_alt="Profile picture of Kevin Rudolf Siebert" image_class="h-24 w-24 shrink-0 rounded-full border border-[#d8cab0] object-cover md:h-28 md:w-28 md:self-center md:-ml-3" %}
+{% include profile-intro.html subtitle="About me" title="Kevin Rudolf Siebert" content=about_intro image_src="/assets/images/profile.jpg" image_alt="Profile picture of Kevin Rudolf Siebert" image_class="h-24 w-24 shrink-0 rounded-full border border-[#d8cab0] object-cover mt-8 md:mt-0 md:h-28 md:w-28 md:self-center md:-ml-3" %}
 
 {% capture focus_areas_content %}
 - Quantum field theory, general relativity, and quantum gravity
