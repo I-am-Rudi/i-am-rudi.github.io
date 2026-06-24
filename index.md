@@ -27,11 +27,11 @@ bring some value to other people too.
 
 - [Writers Crucible](https://github.com/I-am-Rudi/WritersCrucible)
   -> A small extension that allows to track and gamify writing sessions in
-    Visual Studio Code (my currently preferred LaTeX editor).
+    Visual Studio Code.
 
 - [Workout Journal](https://github.com/I-am-Rudi/workout-journal) 
     -> A note-first extension for Obsidian to track workout sessions and
-    progress directly in the note-taking app.+
+    progress directly in the note-taking app.
 
 - [Styling for Plots.jl and Matplotlib](https://github.com/I-am-Rudi/plot-tol-config) -> This is a
   unified Styling for Plots.jl and Matplotlib that is based on the [color palette of Paul Tol](https://sronpersonalpages.nl/~pault/). It is designed to be used
