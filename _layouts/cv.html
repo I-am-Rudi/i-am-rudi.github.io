@@ -1,0 +1,78 @@
+---
+layout: default
+---
+<section class="title-box title-box--split title-box--cv">
+  <div class="title-main">
+    <div class="eyebrow"><span class="tick"></span>{{ page.eyebrow | default: 'Curriculum Vitae' }}</div>
+    <h1>{{ page.cv_name }}</h1>
+    <div class="cv-contact">
+      {% for link in page.contact %}<a href="{{ link.url }}"{% if link.external %} target="_blank" rel="noopener"{% endif %}>{{ link.label }}</a>{% endfor %}
+    </div>
+  </div>
+  <div class="hero-photo">
+    <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Profile picture of {{ site.author }}">
+  </div>
+</section>
+
+{% if page.education %}
+<section class="section">
+  <div class="section-title">Education</div>
+  <div class="entries">
+    {% for e in page.education %}
+    <div class="entry">
+      <div class="entry-date">{{ e.date }}</div>
+      <div>
+        <div class="entry-place">{{ e.place }}</div>
+        {% if e.notes %}<div class="entry-notes">{% for n in e.notes %}<div class="entry-note">{{ n }}</div>{% endfor %}</div>{% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if page.theses %}
+<section class="section">
+  <div class="section-title">Theses</div>
+  <div class="theses">
+    {% for t in page.theses %}
+    <div class="thesis">
+      <div class="thesis-kind">{{ t.kind }}</div>
+      <p class="thesis-title">{{ t.title }}</p>
+      <div class="thesis-sup"><span>Supervisors</span><br>{{ t.supervisors }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if page.experience %}
+<section class="section">
+  <div class="section-title">Experience</div>
+  <div class="entries">
+    {% for e in page.experience %}
+    <div class="entry">
+      <div class="entry-date">{{ e.date }}</div>
+      <div>
+        <div class="entry-place">{{ e.place }}</div>
+        {% if e.notes %}<div class="entry-notes">{% for n in e.notes %}<div class="entry-note">{{ n }}</div>{% endfor %}</div>{% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if page.skills %}
+<section class="section section--last">
+  <div class="section-title">Key Skills</div>
+  <div class="skills">
+    {% for s in page.skills %}
+    <div class="skill">
+      <div class="skill-label">{{ s.label }}</div>
+      <div class="skill-items">{{ s.items }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

@@ -1,22 +1,38 @@
 ---
-layout: default
-title: "Example Markdown Post"
+layout: post
+title: Example Markdown Post
+date: 2026-03-30
+summary: A first post — a quick walk through the markdown setup powering this site.
 ---
 
-## SYSTEM NOTE
+This is an example post. Every entry on the blog is just a markdown file in the
+`_posts/` folder, named `YYYY-MM-DD-title.md` — drop a new one in and it shows up
+automatically, newest first.
 
-This post validates baseline markdown styling.
+## Writing a post
 
-### CHECKLIST
+The bit at the very top between the `---` lines is the *front matter*. It sets the
+title, date, and the short summary shown in the blog list:
 
-- MONOSPACED TYPOGRAPHY
-- HIGH CONTRAST SURFACE
-- SHARP BORDERS, NO SHADOWS
-
-### CODE SAMPLE
-
-```ruby
-def status
-  "nominal"
-end
+```yaml
+---
+layout: post
+title: My New Post
+date: 2026-04-12
+summary: One line describing the post.
+---
 ```
+
+Everything below it is plain markdown — headings, lists, links, and code all get
+styled to match the rest of the site.
+
+## What you can use
+
+- **Bold** and *italic* text
+- [Links](https://github.com/I-am-Rudi) to anywhere
+- Inline `code` and fenced code blocks
+- Block quotes:
+
+> Notes to self, or anything worth setting apart.
+
+That’s all there is to it — write markdown, commit, done.

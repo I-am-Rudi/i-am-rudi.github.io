@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<section class="title-box title-box--split title-box--blog">
+  <div class="title-main">
+    <div class="eyebrow"><span class="tick"></span>{{ page.eyebrow | default: 'Writing' }}</div>
+    <h1>{{ page.heading | default: 'Blog.' }}</h1>
+    {% if page.intro %}<p class="sub">{{ page.intro }}</p>{% endif %}
+  </div>
+  <div class="hero-photo hero-photo--ghost" aria-hidden="true">
+    <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="">
+  </div>
+</section>
+
+<div class="post-list">
+  {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+  {% for year in posts_by_year %}
+  <div class="year-label">{{ year.name }}</div>
+  {% for post in year.items %}
+  <a class="post-row" href="{{ post.url | relative_url }}">
+    <span class="post-date">{{ post.date | date: '%Y-%m-%d' }}</span>
+    <span class="post-main">
+      <span class="post-title">{{ post.title }}</span>
+      {% if post.summary %}<span class="post-sub">{{ post.summary }}</span>{% endif %}
+    </span>
+    <span class="post-arrow">→</span>
+  </a>
+  {% endfor %}
+  {% endfor %}
+</div>
+
+{% if page.note %}
+<div class="blog-note">
+  <div class="box"><p>{{ page.note | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}</p></div>
+</div>
+{% endif %}

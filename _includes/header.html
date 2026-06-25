@@ -1,0 +1,13 @@
+{% assign u = page.url %}
+<header class="nav">
+  <nav class="nav-links">
+    <a href="{{ '/' | relative_url }}"{% if u == '/' %} class="active"{% endif %}>HOME</a>
+    <a href="{{ '/cv/' | relative_url }}"{% if u contains '/cv' %} class="active"{% endif %}>CV</a>
+    <a href="{{ '/blog/' | relative_url }}"{% if u contains '/blog' or page.layout == 'post' %} class="active"{% endif %}>BLOG</a>
+    <a href="{{ '/about/' | relative_url }}"{% if u contains '/about' %} class="active"{% endif %}>ABOUT</a>
+  </nav>
+  <div class="nav-meta">
+    <span>{{ site.location }}</span>
+    <span class="mark"></span>
+  </div>
+</header>

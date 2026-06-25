@@ -1,0 +1,7 @@
+source "https://rubygems.org"
+
+# GitHub Pages — same toolchain that builds your *.github.io site.
+gem "github-pages", group: :jekyll_plugins
+
+# Local preview helpers
+gem "webrick", "~> 1.8"

@@ -1,0 +1,40 @@
+---
+layout: default
+---
+<section class="title-box title-box--split">
+  <div class="title-main">
+    <div class="eyebrow"><span class="tick"></span>{{ page.eyebrow | default: 'About' }}</div>
+    <h1>{{ page.heading }}</h1>
+    <div class="lead">
+      {{ content }}
+    </div>
+  </div>
+  {% if page.profile %}
+  <div class="hero-photo">
+    <img src="{{ page.profile | relative_url }}" alt="Profile picture of {{ site.author }}">
+  </div>
+  {% endif %}
+</section>
+
+{% if page.interests or page.links %}
+<section class="cards">
+  {% if page.interests %}
+  <div class="card">
+    <div class="card-title">{{ page.interests_title | default: 'Interests' }}</div>
+    <ul class="bullets">
+      {% for i in page.interests %}<li>{{ i | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}</li>{% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+  {% if page.links %}
+  <div class="card">
+    <div class="card-title">{{ page.links_title | default: 'Elsewhere' }}</div>
+    <ul class="links-list">
+      {% for l in page.links %}
+      <li><a href="{{ l.url }}"{% if l.external %} target="_blank" rel="noopener"{% endif %}><span class="name">{{ l.name }}</span><span class="meta">{{ l.meta }}</span></a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+</section>
+{% endif %}

@@ -1,0 +1,45 @@
+---
+layout: default
+---
+<section class="title-box title-box--split">
+  <div class="title-main">
+    <div class="eyebrow"><span class="tick"></span>{{ page.eyebrow | default: 'Quick introduction' }}</div>
+    <h1>{{ page.heading }}</h1>
+    <div class="lead lead-home">
+      {{ content }}
+    </div>
+  </div>
+  {% if page.profile %}
+  <div class="hero-photo">
+    <img src="{{ page.profile | relative_url }}" alt="Profile picture of {{ site.author }}">
+  </div>
+  {% endif %}
+</section>
+
+<section class="cards">
+  <div class="card">
+    <div class="card-title">{{ page.currently_title | default: 'Currently' }}</div>
+    <ul class="bullets">
+      {% for item in page.currently %}
+      <li>{{ item | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="card">
+    <div class="card-title">{{ page.projects_title | default: 'Open source projects' }}</div>
+    {% if page.projects_intro %}<p class="card-intro">{{ page.projects_intro }}</p>{% endif %}
+    <ul class="projects">
+      {% for p in page.projects %}
+      <li><a href="{{ p.url }}" target="_blank" rel="noopener">{{ p.name }}</a><span class="arrow"> → </span><span class="proj-desc">{{ p.description }}</span></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+{% assign latest = site.posts.first %}
+{% if latest %}
+<section class="recent">
+  <span class="recent-label">Recent entries</span>
+  <span class="recent-item"><span class="recent-date">{{ latest.date | date: '%Y-%m-%d' }} · </span><a href="{{ latest.url | relative_url }}">{{ latest.title }}</a></span>
+</section>
+{% endif %}

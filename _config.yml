@@ -1,8 +1,22 @@
 title: Homepage
-description: Brutalist developer portfolio
+author: Kevin Rudolf Siebert
+email: k.r.siebert@icloud.com
+description: >-
+  Personal homepage of Kevin Rudolf Siebert — physicist and part-time
+  machine learning engineer based in Jena, Germany.
 url: "https://i-am-rudi.github.io"
-baseurl: "/"
+baseurl: ""
+
+# Build settings
 markdown: kramdown
-collections:
-  projects:
-    output: true
+permalink: /:year/:month/:day/:title.html
+
+# Social / nav metadata used in templates
+github_user: I-am-Rudi
+location: "JENA · DE"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<section class="title-box title-box--split">
+  <div class="title-main">
+    <div class="eyebrow"><span class="tick"></span>{{ page.date | date: '%Y-%m-%d' }}</div>
+    <h1>{{ page.title }}</h1>
+    {% if page.summary %}<p class="sub">{{ page.summary }}</p>{% endif %}
+  </div>
+  <div class="hero-photo hero-photo--ghost" aria-hidden="true">
+    <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="">
+  </div>
+</section>
+<article class="post">
+  <div class="prose-card">
+    <div class="prose">
+      {{ content }}
+    </div>
+    <p class="post-back"><a href="{{ '/blog/' | relative_url }}">← Back to all entries</a></p>
+  </div>
+</article>

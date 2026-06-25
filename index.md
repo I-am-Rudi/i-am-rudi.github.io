@@ -1,67 +1,31 @@
 ---
-layout: default
+layout: home
 title: Home
+eyebrow: Quick introduction
+heading: Hi, I’m Rudi.
+profile: /assets/images/profile.jpg
+
+# --- "Currently" box (markdown allowed in each line, e.g. **bold**) ---
+currently:
+  - Actively looking for a **PhD position** in fundamental physics, quantum gravity, and/or machine learning for scientific applications.
+  - Just completed my master’s at **Friedrich-Schiller-University** Jena, focused on quantum & gravitational physics.
+  - Working as a machine learning engineer at **Fraunhofer IOF** Jena, where I focus on computer vision.
+
+# --- "Open source projects" box ---
+projects_intro: A few things I’ve built in my spare time that hopefully help others too.
+projects:
+  - name: Writers Crucible
+    url: https://github.com/I-am-Rudi/WritersCrucible
+    description: VS Code extension to track & gamify writing sessions.
+  - name: Workout Journal
+    url: https://github.com/I-am-Rudi/workout-journal
+    description: Note-first Obsidian extension to track workouts in your notes.
+  - name: Plots.jl & Matplotlib styling
+    url: https://github.com/I-am-Rudi/plot-tol-config
+    description: Unified scientific plot styling based on Paul Tol’s palette.
+  - name: Rollover inbox
+    url: https://github.com/I-am-Rudi/obsidian-rollover-inbox
+    description: A dataview-js script for rollover inboxes in daily notes.
 ---
 
-{% capture intro_content %}
-Welcome to my homepage. I’m a physicist and part time machine learning engineer based in Jena, Germany.
-
-Visit the CV page for an overview of my education and experience.
-{% endcapture %}
-
-
-{% include profile-intro.html subtitle="Quick introduction" title="Hi, I’m Rudi." content=intro_content image_src="/assets/images/profile.jpg" image_alt="Profile picture of Rudi" image_class="h-24 w-24 shrink-0 rounded-full border border-[#d8cab0] object-cover mt-8 md:mt-0 md:h-28 md:w-28 md:self-center md:-ml-3" %}
-
-{% capture currently_content %}
-- I am actively looking for a PhD position in the fields of fundamental physics,
-  quantum gravity, and/or machine learning for scientific applications.
-
-- I have just completed my master’s degree at the Friedrich-Schiller-University in Jena with a focus on quantum and gravitational physics.
-   
-- Currently, I am working as a machine learning engineer at the Fraunhofer Institute for Applied Optics and Precision Engineering (IOF) in Jena, where I focus on computer vision.
-{% endcapture %}
-
-{% capture projects_content %}
-Here are some projects I’ve worked on in my spare time on, which hopefully
-bring some value to other people too.
-
-- [Writers Crucible](https://github.com/I-am-Rudi/WritersCrucible)
-  -> A small extension that allows to track and gamify writing sessions in
-    Visual Studio Code.
-
-- [Workout Journal](https://github.com/I-am-Rudi/workout-journal) 
-    -> A note-first extension for Obsidian to track workout sessions and
-    progress directly in the note-taking app.
-
-- [Styling for Plots.jl and Matplotlib](https://github.com/I-am-Rudi/plot-tol-config) -> This is a
-  unified Styling for Plots.jl and Matplotlib that is based on the [color palette of Paul Tol](https://sronpersonalpages.nl/~pault/). It is designed to be used
-  for scientific publications and presentations.
-
-- [Rollover inbox in dataview-js](https://github.com/I-am-Rudi/obsidian-rollover-inbox) -> A small
-  dataview-js script for Obsidian that allows to create a rollover inbox for
-  daily notes. 
-{% endcapture %}
-
-{% capture home_cards %}
-{% include card.html title="Currently" content=currently_content %}
-{% include card.html title="Open source projects" content=projects_content %}
-{% endcapture %}
-{% include grid.html class="mt-10 grid gap-4 md:grid-cols-2" content=home_cards %}
-
-{% include eyebrow.html text="Recent entries" style="margin-top:6rem;" %}
-{% assign entries = site.projects | concat: site.posts %}
-{% assign entries = entries | sort: "date" | reverse %}
-{% capture recent_entries %}
-{% for item in entries %}
-{% capture entry_content %}
-{{ item.date | date: "%Y-%m-%d" }}
-
-### [{{ item.title }}]({{ item.url | relative_url }})
-{% if item.excerpt %}
-{{ item.excerpt | strip_html | truncate: 140 }}
-{% endif %}
-{% endcapture %}
-{% include card.html content=entry_content %}
-{% endfor %}
-{% endcapture %}
-{% include grid.html class="mt-4 grid gap-4 md:grid-cols-2" content=recent_entries %}
+Welcome to my homepage. I’m a physicist and part‑time machine learning engineer based in Jena, Germany.
