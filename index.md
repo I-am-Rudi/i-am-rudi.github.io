@@ -26,6 +26,10 @@ projects:
   - name: Rollover inbox
     url: https://github.com/I-am-Rudi/obsidian-rollover-inbox
     description: A dataview-js script for rollover inboxes in daily notes.
+  - name: xAct Documentation
+    url: https://xact-documentation.readthedocs.io/en/latest/
+    description: An unoffocial documentation for the xAct package suite in Mathematica.
+
 ---
 
 Welcome to my homepage. I’m a physicist and part‑time machine learning engineer based in Jena, Germany.
