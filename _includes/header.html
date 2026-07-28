@@ -8,7 +8,6 @@
       <a href="{{ '/blog/' | relative_url }}"{% if u contains '/blog' or page.layout == 'post' %} class="active"{% endif %}>BLOG</a>
       <a href="{{ '/about/' | relative_url }}"{% if u contains '/about' %} class="active"{% endif %}>ABOUT</a>
     </nav>
-    <span class="nav-loc">{{ site.location }}</span>
     <button class="theme-switch" type="button" data-theme-toggle aria-label="Toggle light / dark mode" title="Toggle light / dark mode"><span class="ts-moon"></span></button>
   </div>
 </header>
