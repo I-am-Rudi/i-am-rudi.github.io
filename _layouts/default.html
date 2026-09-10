@@ -2,47 +2,14 @@
 <html lang="en">
 {% include head.html %}
 <body>
-  {% include header.html %}
   <div class="site">
     <div class="wrap">
+      {% include header.html %}
       <main class="main-content">
         {{ content }}
       </main>
       {% include footer.html %}
     </div>
   </div>
-  <script>
-    (function () {
-      var KEY = 'tbmh', VWKEY = 'tbmhvw';
-      var box = document.querySelector('.title-box');
-      if (!box) return;
-
-      function apply() {
-        var vw = window.innerWidth;
-        var storedVw = parseInt(localStorage.getItem(VWKEY) || '0');
-        if (Math.abs(vw - storedVw) > 100) {
-          localStorage.removeItem(KEY);
-          localStorage.setItem(VWKEY, String(vw));
-        }
-        box.style.minHeight = '';
-        var h = box.getBoundingClientRect().height;
-        var stored = parseFloat(localStorage.getItem(KEY) || '0');
-        if (h > stored) {
-          stored = h;
-          localStorage.setItem(KEY, String(stored));
-          localStorage.setItem(VWKEY, String(vw));
-        }
-        if (stored > 0) box.style.minHeight = stored + 'px';
-      }
-
-      apply();
-
-      var timer;
-      window.addEventListener('resize', function () {
-        clearTimeout(timer);
-        timer = setTimeout(apply, 120);
-      });
-    })();
-  </script>
 </body>
 </html>

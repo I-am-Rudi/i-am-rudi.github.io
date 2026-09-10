@@ -13,7 +13,6 @@ permalink: /:year/:month/:day/:title.html
 
 # Social / nav metadata used in templates
 github_user: I-am-Rudi
-location: "JENA · DE"
 
 exclude:
   - Gemfile
