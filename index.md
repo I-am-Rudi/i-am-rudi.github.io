@@ -25,8 +25,7 @@ projects:
     description: Unified scientific plot styling based on Paul Tol’s palette.
   - name: Tasks Companion
     url: https://github.com/I-am-Rudi/task-companion
-    description: A companion to the Tasks Plugin, with intentional rollover
-    blocks and convenience features.
+    description: A companion to the Tasks Plugin, with intentional rollover blocks and convenience features.
   - name: xAct Documentation
     url: https://xact-documentation.readthedocs.io/en/latest/
     description: An unoffocial documentation for the xAct package suite in Mathematica.
