@@ -7,9 +7,9 @@ profile: /assets/images/profile.jpg
 
 # --- "Currently" box (markdown allowed in each line, e.g. **bold**) ---
 currently:
-  - Actively looking for a **PhD position** in fundamental physics, quantum gravity, and/or machine learning for scientific applications.
-  - Just completed my master’s at **Friedrich-Schiller-University** Jena, focused on quantum & gravitational physics.
-  - Working as a machine learning engineer at **Fraunhofer IOF** Jena, where I focus on computer vision.
+  - About to start a PhD in Quantum Field Theory on Curverd Spacetimes.
+  - Recently completed my master’s at **Friedrich-Schiller-University** Jena, focused on quantum & gravitational physics.
+  - Working part-time as a machine learning engineer at **Fraunhofer IOF** Jena, where I focus on computer vision.
 
 # --- "Open source projects" box ---
 projects_intro: A few things I’ve built in my spare time that hopefully help others too.
@@ -23,9 +23,10 @@ projects:
   - name: Plots.jl & Matplotlib styling
     url: https://github.com/I-am-Rudi/plot-tol-config
     description: Unified scientific plot styling based on Paul Tol’s palette.
-  - name: Rollover inbox
-    url: https://github.com/I-am-Rudi/obsidian-rollover-inbox
-    description: A dataview-js script for rollover inboxes in daily notes.
+  - name: Tasks Companion
+    url: https://github.com/I-am-Rudi/task-companion
+    description: A companion to the Tasks Plugin, with intentional rollover
+    blocks and convenience features.
   - name: xAct Documentation
     url: https://xact-documentation.readthedocs.io/en/latest/
     description: An unoffocial documentation for the xAct package suite in Mathematica.

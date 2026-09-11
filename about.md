@@ -7,9 +7,11 @@ heading: A bit more about me.
 profile: /assets/images/profile.jpg
 
 interests:
-  - Quantum gravity, spin foams, and the foundations of physics.
+  - Quantum Field Theory on Curved Spacetimes, Quantum Gravity and the
+    foundations of physics.
   - Machine learning for scientific applications and computer vision.
   - Scientific computing with Python, Julia, and C++
+  - Philosophy and especially the philosophy of science.
 
 links:
   - name: GitHub
@@ -24,4 +26,5 @@ links:
     meta: "Education & experience →"
 ---
 
-I am a physicist and machine learning engineer based in Jena, focused on quantum and gravitational physics, computational methods, and practical AI systems.
+I am a physicist and machine learning engineer based in Jena, soon to start a
+PhD in Quantum Field Theory on Curved Spacetimes.
