@@ -26,5 +26,4 @@ links:
     meta: "Education & experience →"
 ---
 
-I am a physicist and machine learning engineer based in Jena, soon to start a
-PhD in Quantum Field Theory on Curved Spacetimes.
+Welcome to my homepage. I am a PhD student in theoretical physics in Jena, Germany. I moonlight as an open source and philosophy enthusiast.

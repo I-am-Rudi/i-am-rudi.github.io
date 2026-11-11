@@ -7,13 +7,15 @@ profile: /assets/images/profile.jpg
 
 # --- "Currently" box (markdown allowed in each line, e.g. **bold**) ---
 currently:
-  - About to start a PhD in Quantum Field Theory on Curverd Spacetimes.
-  - Recently completed my master’s at **Friedrich-Schiller-University** Jena, focused on quantum & gravitational physics.
-  - Working part-time as a machine learning engineer at **Fraunhofer IOF** Jena, where I focus on computer vision.
+  - PhD centered around Quantum Field Theory on Curverd Spacetimes and analogue systems
+  - Teaching at the Friedrich-Schiller-University
 
 # --- "Open source projects" box ---
 projects_intro: A few things I’ve built in my spare time that hopefully help others too.
 projects:
+  - name: Phaedrus
+    url: https://github.com/I-am-Rudi/phaedrus
+    description: A grammar checker and style coach for papers, theses and books, trained on the writers you like. (Work in Progress)
   - name: Writers Crucible
     url: https://github.com/I-am-Rudi/WritersCrucible
     description: VS Code extension to track & gamify writing sessions.
@@ -32,4 +34,4 @@ projects:
 
 ---
 
-Welcome to my homepage. I’m a physicist and part‑time machine learning engineer based in Jena, Germany.
+Welcome to my homepage. I am a PhD student in theoretical physics in Jena, Germany. I moonlight as an open source and philosophy enthusiast.
