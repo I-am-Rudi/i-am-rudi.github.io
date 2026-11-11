@@ -50,6 +50,8 @@
 *{ box-sizing:border-box; }
 *{ transition:background-color .25s ease, color .2s ease, border-color .25s ease; }
 html,body{ margin:0; height:100%; }
+/* Reserve scrollbar space so short pages (About) don't shift sideways */
+html{ scrollbar-gutter:stable; }
 
 body{
   font-family:var(--mono);

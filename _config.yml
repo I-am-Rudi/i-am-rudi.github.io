@@ -14,7 +14,13 @@ permalink: /:year/:month/:day/:title.html
 # Social / nav metadata used in templates
 github_user: I-am-Rudi
 
+# Blog is hidden for now. To re-enable: set show_blog to true and remove
+# blog.md and _posts from the exclude list below.
+show_blog: false
+
 exclude:
+  - blog.md
+  - _posts
   - Gemfile
   - Gemfile.lock
   - README.md
